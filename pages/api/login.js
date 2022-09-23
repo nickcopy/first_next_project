@@ -1,6 +1,7 @@
 const 원본id = "ksw";
 const 원본pw = "123";
 export default function handler(req, res) {
+  console.log("나는 문어당 ㅎㅎㅎㅎㅎㅎㅎ");
   console.log(req.body);
   if ("POST" !== req.method) {
     return res.status(405).json({ ok: false, message: "g1 안합니다" });
